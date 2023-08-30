@@ -1,8 +1,13 @@
 import React from 'react'
+import './homepage.css'
 
 
 export default function HomePage() {
     return (
-        <div>This is the Homepage</div>
+        <div className="homepage-container">
+            <div className="homepage-content">
+                "Hello there"
+            </div>
+        </div>
     )
 }
