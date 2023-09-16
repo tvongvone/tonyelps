@@ -8,16 +8,19 @@ function Navigation({ isLoaded }){
 	const sessionUser = useSelector(state => state.session.user);
 
 	return (
-		<ul>
-			<li>
-				<NavLink exact to="/">Home</NavLink>
-			</li>
-			{isLoaded && (
+		<div className='navbar-container'>
+			<ul className='navbar-content'>
 				<li>
-					<ProfileButton user={sessionUser} />
+				<NavLink exact to="/" style={{color: 'white'}}>Home</NavLink>
 				</li>
-			)}
-		</ul>
+				{isLoaded && (
+					<li>
+						<ProfileButton user={sessionUser} />
+					</li>
+				)}
+			</ul>
+		</div>
+
 	);
 }
 

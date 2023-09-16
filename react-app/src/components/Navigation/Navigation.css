@@ -1,7 +1,33 @@
+* {
+  margin: 0px;
+}
+
 .profile-dropdown {
   position: absolute;
 }
 
 .hidden {
   display: none;
+}
+
+.navbar-container {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(
+    360deg,
+    transparent,
+    rgba(22, 22, 22, 0.416),
+    #111
+);
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 35px;
+  padding-left: 0px;
+  list-style: none;
+  color: white;
 }
