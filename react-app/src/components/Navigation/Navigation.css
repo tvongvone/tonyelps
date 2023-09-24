@@ -4,6 +4,10 @@
 
 .profile-dropdown {
   position: absolute;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
 }
 
 .hidden {
